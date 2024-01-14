@@ -34,23 +34,12 @@ session_start();
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.php">Home</a>
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="display_all.php">Products</a>
-        </li>
-        <?php
-        if(isset($_SESSION['username'])){
-          echo "<li class='nav-item'>
-          <a class='nav-link' href='./users_area/profile.php'>My Account</a>
-        </li>";
-        }else{
-          echo "<li class='nav-item'>
-          <a class='nav-link' href='./users_area/user_registration.php'>Register</a>
-        </li>";
-        }
-        ?>
         
+        <li class="nav-item">
+          <a class="nav-link" href="./users_area/user_registration.php">Register</a>
+        </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Contact</a>
         </li>
@@ -75,7 +64,7 @@ session_start();
           <a class="nav-link disabled">Disabled</a>
         </li> -->
       </ul>
-      <form class="d-flex" action="search_product.php" method="get">
+      <form class="d-flex" action="" method="get">
         <input class="form-control me-2" name="search_data" type="search" placeholder="Search" aria-label="Search">
         <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
         <input type="submit" name="search_data_product" id="" value="Search" class="btn btn-outline-success" >
@@ -86,21 +75,17 @@ session_start();
 <?php cart(); ?>
 <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
  <ul class="navbar-nav me-auto">
- <!-- <li class="nav-item">
-          <a class="nav-link" href="#">Welcome Guest</a>
-        </li> -->
-        
-
-            <?php
-if(!isset($_SESSION['username'])){
-  echo "<li class='nav-item'>
-  <a class='nav-link' href=''>Welcome Guest</a>
-</li>";
-}else{
-  echo "<li class='nav-item'>
-  <a class='nav-link' href=''>Welcome ".$_SESSION['username']."</a>
-</li>";
-}            
+ 
+        <?php
+  if(!isset($_SESSION['username'])){
+    echo "<li class='nav-item'>
+    <a class='nav-link' href=''>Welcome Guest</a>
+  </li>";
+  }else{
+    echo "<li class='nav-item'>
+    <a class='nav-link' href=''>Welcome ".$_SESSION['username']."</a>
+  </li>";
+  }      
             if(!isset($_SESSION['username'])){
               echo "<li class='nav-item'>
               <a class='nav-link' href='./users_area/user_login.php'>Login</a>
@@ -113,7 +98,6 @@ if(!isset($_SESSION['username'])){
               
             
             ?>
-       
  </ul>
 </nav>
 <div class="bg-light">
@@ -125,12 +109,15 @@ if(!isset($_SESSION['username'])){
   <div class="col-md-10">
     <div class="row">
    <?php
-  
-  getproducts();
+   search_product();
    get_unique_categories();
    get_unique_brands();
-   
    ?>
+    
+
+
+      
+
 </div></div>
   <div class="col-md-2 p-0">
     <ul class="navbar-nav me-auto">
@@ -153,10 +140,13 @@ if(!isset($_SESSION['username'])){
     </ul>
   </div>
 </div>
-<?php
-//include('./includes/footer.php');
-?>
 
+
+
+
+<!-- <div class="bg-info">
+      <p>asdf</p>
+    </div> -->
     </div>
     
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

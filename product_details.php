@@ -39,18 +39,9 @@ session_start();
         <li class="nav-item">
           <a class="nav-link" href="display_all.php">Products</a>
         </li>
-        <?php
-        if(isset($_SESSION['username'])){
-          echo "<li class='nav-item'>
-          <a class='nav-link' href='./users_area/profile.php'>My Account</a>
-        </li>";
-        }else{
-          echo "<li class='nav-item'>
-          <a class='nav-link' href='./users_area/user_registration.php'>Register</a>
-        </li>";
-        }
-        ?>
-        
+        <li class="nav-item">
+          <a class="nav-link" href="./users_area/user_registration.php">Register</a>
+        </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Contact</a>
         </li>
@@ -86,21 +77,17 @@ session_start();
 <?php cart(); ?>
 <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
  <ul class="navbar-nav me-auto">
- <!-- <li class="nav-item">
-          <a class="nav-link" href="#">Welcome Guest</a>
-        </li> -->
-        
-
-            <?php
-if(!isset($_SESSION['username'])){
-  echo "<li class='nav-item'>
-  <a class='nav-link' href=''>Welcome Guest</a>
-</li>";
-}else{
-  echo "<li class='nav-item'>
-  <a class='nav-link' href=''>Welcome ".$_SESSION['username']."</a>
-</li>";
-}            
+       
+        <?php
+        if(!isset($_SESSION['username'])){
+          echo "<li class='nav-item'>
+          <a class='nav-link' href=''>Welcome Guest</a>
+        </li>";
+        }else{
+          echo "<li class='nav-item'>
+          <a class='nav-link' href=''>Welcome ".$_SESSION['username']."</a>
+        </li>";
+        }
             if(!isset($_SESSION['username'])){
               echo "<li class='nav-item'>
               <a class='nav-link' href='./users_area/user_login.php'>Login</a>
@@ -113,7 +100,6 @@ if(!isset($_SESSION['username'])){
               
             
             ?>
-       
  </ul>
 </nav>
 <div class="bg-light">
@@ -124,13 +110,22 @@ if(!isset($_SESSION['username'])){
 <div class="row px-3">
   <div class="col-md-10">
     <div class="row">
+       
+       
+
+        
    <?php
   
-  getproducts();
+  view_details();
    get_unique_categories();
    get_unique_brands();
-   
+
    ?>
+    
+
+
+      
+
 </div></div>
   <div class="col-md-2 p-0">
     <ul class="navbar-nav me-auto">
@@ -153,8 +148,11 @@ if(!isset($_SESSION['username'])){
     </ul>
   </div>
 </div>
+
+
+
 <?php
-//include('./includes/footer.php');
+include('./includes/footer.php');
 ?>
 
     </div>
