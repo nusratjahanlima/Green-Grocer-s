@@ -31,7 +31,7 @@ include('../functions/common_function.php');
     <div class="container-fluid p-0">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <img src="../images/download (2).jpg" alt="" class="logo">
+                <img src="../images/images (1).png" alt="" class="logo">
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
                     <ul class="navbar-nav">
                         <li class="nav-iten">
