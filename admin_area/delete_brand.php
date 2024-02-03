@@ -5,7 +5,7 @@ if(isset($_GET['delete_brand'])){
     $result_product=mysqli_query($con,$delete_product1);
     if($result_product){
         echo "<script>alert('Successful')</script>";
-        echo "<script>window.open('./index.php','_self')</script>"; 
+        echo "<script>window.open('./admin.php','_self')</script>"; 
     }
 }
 ?>

@@ -53,15 +53,15 @@ include('../functions/common_function.php');
                 </div>
                 <div class="button text-center">
                    <button class="my-3"><a href="insert_product.php" class="nav-link text-light bg-info my-1">Insert Products</a></button>
-                   <button class="my-3"><a href="index.php?view_products" class="nav-link text-light bg-info my-1">View Products</a></button>
-                   <button class="my-3"><a href="index.php?insert_category" class="nav-link text-light bg-info my-1">Insert Categores</a></button>
-                   <button><a href="index.php?view_categories" class="nav-link text-light bg-info my-1">View Categores</a></button>
-                   <button><a href="index.php?insert_brand" class="nav-link text-light bg-info my-1">Insert Brand</a></button>
-                   <button><a href="index.php?view_brands" class="nav-link text-light bg-info my-1">View Brands</a></button>
-                   <button><a href="index.php?list_orders" class="nav-link text-light bg-info my-1">All Order</a></button>
-                   <button><a href="index.php?list_payments" class="nav-link text-light bg-info my-1">All Payment</a></button>
-                   <button><a href="index.php?list_users" class="nav-link text-light bg-info my-1"> List users</a></button>
-                   <button><a href="" class="nav-link text-light bg-info my-1">Logout</a></button>
+                   <button class="my-3"><a href="admin.php?view_products" class="nav-link text-light bg-info my-1">View Products</a></button>
+                   <button class="my-3"><a href="admin.php?insert_category" class="nav-link text-light bg-info my-1">Insert Categores</a></button>
+                   <button><a href="admin.php?view_categories" class="nav-link text-light bg-info my-1">View Categores</a></button>
+                   <button><a href="admin.php?insert_brand" class="nav-link text-light bg-info my-1">Insert Brand</a></button>
+                   <button><a href="admin.php?view_brands" class="nav-link text-light bg-info my-1">View Brands</a></button>
+                   <button><a href="admin.php?list_orders" class="nav-link text-light bg-info my-1">All Order</a></button>
+                   <button><a href="admin.php?list_payments" class="nav-link text-light bg-info my-1">All Payment</a></button>
+                   <button><a href="admin.php?list_users" class="nav-link text-light bg-info my-1"> List users</a></button>
+                   <button><a href="admin.php?admin_logout" class="nav-link text-light bg-info my-1">Logout</a></button>
                 </div>
             </div>
         </div>

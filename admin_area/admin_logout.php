@@ -11,7 +11,7 @@
 </head>
 <body>
     <div class="container-fluid m-3">
-        <h3 class="text-center mb-5">Admin Login</h3>
+        <h3 class="text-center mb-5">Welcome to dashboard!</h3>
         <div class="row d-flex justify-content-center ">
             <div class="col-lg-6 col-xl-4">
            <img src="../images/3-Login-Page-Screen.jpg" alt=""class="img-fluid align-middle">
@@ -19,7 +19,7 @@
             <div class="col-lg-5 col-xl-4">
                 <?php 
                 $con = mysqli_connect('localhost','root','','mystore');
-                if(isset($_POST['admin_login'])){
+                if(isset($_POST['admin_logout'])){
                     $email=$_POST['email'];
                     $hash_password=$_POST['password'];
                     $result="Select  * from `admin` where email='$email' and password='$hash_password'";
@@ -45,8 +45,7 @@
                     <input type="password" name="password" id="password" placeholder="Enter your password..." required="required" class="form-control">
                 </div>
                 <div>
-                    <input type="submit" name="admin_login" value="Login" id="" class="bg-info py-2 px-3">
-                    <p class="big fw-bold mt-2 pt-1"><b>Don't have an account ?</b><a href="admin_registration.php" class="text-danger"><b> Registration</b></a></p>
+                    <input type="submit" name="admin_logout" value="Logout" id="" class="bg-info py-2 px-3">
                 </div>
 
                 

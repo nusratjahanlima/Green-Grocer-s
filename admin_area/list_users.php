@@ -41,7 +41,7 @@
         <td><b><img src='../users_area/user_images/$user_image' alt='$username' class='product_image'></b></td>
         <td><b>$user_address</b></td>
         <td><b>$user_mobile</b></td>
-        <b><td><a href='index.php?user_id= $user_id' ><i class='fa-solid fa-trash'></i></a></b></td>
+        <b><td><a href='admin.php?user_id= $user_id' ><i class='fa-solid fa-trash'></i></a></b></td>
 </tr>";
     }
  }

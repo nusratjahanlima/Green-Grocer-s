@@ -21,7 +21,7 @@
         <tr>
             <td><?php echo  $number; ?></td>
             <td><?php echo  $category_title; ?></td>
-            <td><a href='index.php?delete_category=<?php echo $category_id?>' class='text-black text-center'><i class='fa-solid fa-trash'></i></a></td>
+            <td><a href='admin.php?delete_category=<?php echo $category_id?>' class='text-black text-center'><i class='fa-solid fa-trash'></i></a></td>
         </tr>
         <?php
  }

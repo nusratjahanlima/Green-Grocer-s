@@ -39,7 +39,7 @@
         <td><b>$total_products</b></td>
         <td><b>$order_date</b></td>
         <td><b>$order_status</b></td>
-        <b><td><a href='index.php?delete_order= $order_id ' ><i class='fa-solid fa-trash'></i></a></b></td>
+        <b><td><a href='admin.php?delete_order= $order_id ' ><i class='fa-solid fa-trash'></i></a></b></td>
 </tr>";
     }
  }

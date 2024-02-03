@@ -40,11 +40,18 @@ session_start();
           <a class="nav-link" href="display_all.php">Products</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./users_area/user_registration.php">Register</a>
+          <a class="nav-link" href="display_all.php">Features</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" href="display_all.php">Blogs</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="display_all.php">Review</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./users_area/user_registration.php">Register</a>
+        </li>
+        
         <li class="nav-item">
           <a class="nav-link" href="cart.php"><i class="fa-solid fa-cart-shopping"></i><sup><?php  cart_item() ?></sup></a>
         </li>

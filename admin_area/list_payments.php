@@ -38,7 +38,7 @@
         <td><b>$amount</b></td>
         <td><b>$payment_mode</b></td>
         <td><b>$date</b></td>
-        <b><td><a href='index.php?delete_order= $order_id ' ><i class='fa-solid fa-trash'></i></a></b></td>
+        <b><td><a href='admin.php?delete_order= $order_id ' ><i class='fa-solid fa-trash'></i></a></b></td>
 </tr>";
     }
  }

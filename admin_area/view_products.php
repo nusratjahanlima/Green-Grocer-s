@@ -40,8 +40,8 @@
                 echo $rows_count;
                 ?></td>
                 <td><?php echo $status;?></td>
-                <td><a href='index.php?edit_products=<?php echo $product_id?>' class='text-black text-center'><i class='fa-solid fa-pen-to-square'></i></a></td>
-                <td><a href='index.php?delete_product=<?php echo $product_id?>' class='text-black text-center'><i class='fa-solid fa-trash'></i></a></td>
+                <td><a href='admin.php?edit_products=<?php echo $product_id?>' class='text-black text-center'><i class='fa-solid fa-pen-to-square'></i></a></td>
+                <td><a href='admin.php?delete_product=<?php echo $product_id?>' class='text-black text-center'><i class='fa-solid fa-trash'></i></a></td>
             </tr>
 <?php
             }
